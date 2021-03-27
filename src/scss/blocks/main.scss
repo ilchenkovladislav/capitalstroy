@@ -1,5 +1,10 @@
 .main {
-
+    background-image: url("../img/main-bg.jpg");
+    background-color: #fff;
+    background-size: 1500px;
+    background-position: 690px center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .main__title {
@@ -43,7 +48,7 @@
 
 .main__btn {
     margin-top: 50px;
-    
+
     @media (max-width: 450px) {
         width: 100%;
         padding: 1.3em 0;
