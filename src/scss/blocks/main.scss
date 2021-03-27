@@ -1,0 +1,51 @@
+.main {
+
+}
+
+.main__title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-top: 50px;
+
+    @media (max-width: 450px) {
+        font-size: 32px;
+    }
+}
+
+.main__text {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.main__list {
+    list-style: none;
+    display: grid;
+    gap: 40px;
+    margin-top: 55px;
+    max-width: 550px;
+}
+
+.main__item {
+    position: relative;
+    padding-left: 80px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 60px;
+        height: 50px;
+        background-color: #444;
+    }
+}
+
+.main__btn {
+    margin-top: 50px;
+    
+    @media (max-width: 450px) {
+        width: 100%;
+        padding: 1.3em 0;
+    }
+}
