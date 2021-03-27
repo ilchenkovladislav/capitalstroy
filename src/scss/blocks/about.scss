@@ -1,0 +1,39 @@
+.about {
+    // margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about__list {
+    margin-top: 53px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 53px;
+    row-gap: 25px;
+    
+    @media (max-width: 849px) {
+        grid-template-columns: repeat(2, max-content);
+    }
+    
+    @media (max-width: 599px) {
+        grid-template-columns: repeat(1, max-content);
+    }
+}
+
+.about__item {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    gap: 18px;
+}
+
+.about__value {
+    font-size: 50px;
+    display: block;
+    color: $corporate;
+    font-weight: bold;
+}
+
+.about__text {
+    line-height: 1.5em;
+}
