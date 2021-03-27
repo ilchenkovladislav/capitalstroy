@@ -1,9 +1,9 @@
 .menu {
     @media (max-width: 1319px) {
-        display: grid;
-        grid-template-rows: min-content 1fr;
+        // display: grid;
         
         &--opened {
+            z-index: 1;
             position: fixed;
             right: 0;
             top: 0;
@@ -19,9 +19,10 @@
         display: grid;
         border: none;
         background-color: transparent;
-        // right: 20px;
-        // top: 20px;
         z-index: 2;
+        position: absolute;
+        top: 23px;
+        right: 20px;
     }
 
     @media (min-width: 1320px) {
