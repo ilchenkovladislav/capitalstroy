@@ -8,10 +8,58 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-    <header class="header"></header>
+    <header class="header">
+        <div class="header__outer-wrapper">
+            <a href="#main" class="header__logo">
+                Капитал<br>Строй
+            </a>
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list" aria-label="Закрыть меню">
+                <svg class="menu__icon" width="32" height="32" aria-hidden="true">
+                    <use class="menu__icon-menu" href="img/sprite.svg#menu"></use>
+                    <use class="menu__icon-cross" href="img/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <nav class="header__menu menu">
+                <div class="menu__wrapper">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="#advantages" class="menu__link">Наши преимущества</a></li>
+                        <li class="menu__item"><a href="#clients" class="menu__link">Клиенты</a></li>
+                        <li class="menu__item"><a href="#howwork" class="menu__link">Как мы работаем</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                    </ul>
+                    <a href="tel:+78633033109" class="menu__tel">+7 863 303 31 09</a>
+                    <a href="#" class="menu__callback">Закажите обратный звонок</a>
+                </div>
+            </nav>
+        </div>
+    </header>
     <main class="content">
         
     </main>
     <footer class="footer"></footer>
+
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuBtn = document.querySelector(".menu__button");
+        const menuWrapper = document.querySelector(".menu__wrapper");
+        const menuLinks = document.querySelectorAll(".menu__link");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("menu--opened")
+            menuBtn.classList.toggle("menu__button--open");
+            menuWrapper.classList.toggle("menu__wrapper--opened");
+        });
+
+        menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                if (menu.classList.contains("menu--opened")) {
+                    menu.classList.remove("menu--opened")
+                    menuBtn.classList.remove("menu__button--open");
+                    menuWrapper.classList.remove("menu__wrapper--opened");
+                }
+            });
+        })
+    </script>  
 </body>
 </html>
