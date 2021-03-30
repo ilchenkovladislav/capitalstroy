@@ -1,0 +1,21 @@
+.timer {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 240px;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.timer__block {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.timer__digit {
+    font-weight: bold;
+    font-size: 32px;
+}

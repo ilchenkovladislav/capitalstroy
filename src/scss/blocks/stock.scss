@@ -1,0 +1,38 @@
+.stock {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.stock__wrapper {
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+    }
+}
+
+.stock__title {
+    font-size: 38px;
+}
+
+.stock__text {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.stock__price {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.stock__inscription {
+    margin-top: 25px;
+}
+
+.stock__timer {
+    margin-top: 10px;
+    
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
