@@ -1,0 +1,48 @@
+.steps {
+    background-color: $corporate;
+    padding: 60px 0;
+}
+
+.steps__title {
+    color: $text-white;
+}
+
+.steps__list {
+    margin-top: 40px;
+    list-style: none;
+    display: grid;
+    gap: 40px;
+
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.steps__item {
+    background-color: #fff;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.steps__digit {
+    color: $corporate;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.steps__text {
+    margin-top: 15px;
+}
+
+.steps__btn {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
