@@ -1,6 +1,11 @@
 .stock {
     padding: 40px 0;
     background-color: #fff;
+
+    @media (max-width: 768px) {
+        margin-top: 100px;
+        padding: 0;
+    }
 }
 
 .stock__wrapper {

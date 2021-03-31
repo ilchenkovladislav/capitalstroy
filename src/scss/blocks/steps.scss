@@ -1,6 +1,11 @@
 .steps {
     background-color: $corporate;
     padding: 60px 0;
+
+    @media (max-width: 768px) {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
 }
 
 .steps__title {
@@ -8,7 +13,7 @@
 }
 
 .steps__list {
-    margin-top: 40px;
+    margin-top: 53px;
     list-style: none;
     display: grid;
     gap: 40px;
