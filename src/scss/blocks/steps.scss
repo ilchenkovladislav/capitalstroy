@@ -29,6 +29,7 @@
 }
 
 .steps__item {
+    display: grid;
     background-color: #fff;
     padding: 40px;
     padding-bottom: 0;
@@ -43,6 +44,12 @@
 
 .steps__text {
     margin-top: 15px;
+}
+
+.steps__img {
+    margin-top: 50px;
+    align-self: end;
+    justify-self: center;
 }
 
 .steps__btn {
