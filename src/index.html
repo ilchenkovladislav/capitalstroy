@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Капитал Строй оптово-розничная продажа строительных материалов</title>
+    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
@@ -210,6 +211,22 @@
                 </ul>
             </div>
         </section>
+
+        <section class="sertificats">
+            <div class="container">
+                <h2 class="section-title">Сертификаты и паспорта</h2>
+                <ul class="sertificats__list">
+                    <li class="sertificats__item"><img src="img/sertificat1.jpg" alt=""></li>
+                    <li class="sertificats__item"><img src="img/sertificat1.jpg" alt=""></li>
+                    <li class="sertificats__item"><img src="img/sertificat1.jpg" alt=""></li>
+                    <li class="sertificats__item"><img src="img/sertificat1.jpg" alt=""></li>
+                    <li class="sertificats__item"><img src="img/sertificat1.jpg" alt=""></li>
+                    <li class="sertificats__item"><img src="img/sertificat1.jpg" alt=""></li>
+                    <li class="sertificats__item"><img src="img/sertificat1.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
         <section class="steps" id="steps">
             <div class="container">
                 <h2 class="section-title steps__title">Как мы работаем</h2>
@@ -262,6 +279,30 @@
                 }
             });
         })
-    </script>  
+    </script>
+    <script src="js/tiny-slider.js"></script>
+    <script>
+          var slider = tns({
+            container: '.sertificats__list',
+            slideBy: 'page',
+            autoplay: true,
+            mouseDrag: true,
+            controls: false,
+            nav: true,
+            navPosition: "bottom",
+            autoplayButtonOutput: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 3,
+                },
+                1200: {
+                    items: 5,
+                }
+            }
+        });
+    </script>
 </body>
 </html>
