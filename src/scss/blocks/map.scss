@@ -1,0 +1,24 @@
+.map {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.map__img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.map__yandex {
+    height: 400px;
+
+    &--hidden {
+        height: 0;
+    }
+}
