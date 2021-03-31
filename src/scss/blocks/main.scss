@@ -1,10 +1,17 @@
 .main {
-    background-image: url("../img/main-bg.jpg");
     background-color: #fff;
-    background-size: 1500px;
-    background-position: 690px center;
-    background-repeat: no-repeat;
-    height: 100vh;
+
+    @media (min-width: 768px) {
+        background-image: url("../img/main-bg-tablet.jpg");
+        background-size: cover;
+        background-position: 15% -50px;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    @media (min-width: 1400px) {
+        background-image: url("../img/main-bg.jpg");
+    }
 }
 
 .main__title {
@@ -16,11 +23,21 @@
     @media (max-width: 450px) {
         font-size: 32px;
     }
+
+    @media (min-width: 768px) and (max-width: 810px) {
+        font-size: 46px;
+    }
 }
 
 .main__text {
     font-size: 22px;
     margin-top: 30px;
+}
+
+.main__img {
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .main__list {
@@ -52,5 +69,6 @@
     @media (max-width: 450px) {
         width: 100%;
         padding: 1.3em 0;
+        font-size: 15px;
     }
 }
