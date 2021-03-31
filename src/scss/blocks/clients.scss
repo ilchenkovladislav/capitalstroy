@@ -1,0 +1,18 @@
+.clients {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.clients__list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.clients__item {
+    display: grid;
+}
+
+.clients__item img {
+    display: block;
+    margin: 0 auto;
+}

@@ -227,6 +227,18 @@
             </div>
         </section>
 
+        <section class="clients" id="clients">
+            <div class="container">
+                <h2 class="section-title">Наши клиенты</h2>
+                <ul class="clients__list">
+                    <li class="clients__item"><img src="img/partner1.png" alt=""></li>
+                    <li class="clients__item"><img src="img/partner1.png" alt=""></li>
+                    <li class="clients__item"><img src="img/partner1.png" alt=""></li>
+                    <li class="clients__item"><img src="img/partner1.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
         <section class="steps" id="steps">
             <div class="container">
                 <h2 class="section-title steps__title">Как мы работаем</h2>
@@ -300,6 +312,26 @@
                 },
                 1200: {
                     items: 5,
+                }
+            }
+        });
+    </script>
+    <script>
+          var slider = tns({
+            container: '.clients__list',
+            slideBy: 'page',
+            autoplay: true,
+            mouseDrag: true,
+            controls: false,
+            nav: true,
+            navPosition: "bottom",
+            autoplayButtonOutput: false,
+            responsive: {
+                0: {
+                    items: 3,
+                },
+                768: {
+                    items: 4,
                 }
             }
         });
