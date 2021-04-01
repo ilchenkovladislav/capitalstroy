@@ -40,4 +40,9 @@
     display: grid;
     grid-template-columns: max-content 1fr;
     font-size: 14px;
+    gap: 20px;
+}
+
+.advantages__img {
+    width: 60px;
 }
