@@ -59,7 +59,28 @@
         left: 0;
         width: 60px;
         height: 50px;
-        background-color: #444;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &--storage {
+        &::before {
+            background-image: url("../img/advantages4.jpg");   
+        }
+    }
+    
+    &--price {
+        &::before {
+            background-image: url("../img/advantages2.jpg");   
+        }
+    }
+    
+    &--transport {
+        &::before {
+            background-image: url("../img/advantages8.png");
+            width: 70px;
+            height: 60px;
+        }
     }
 }
 
