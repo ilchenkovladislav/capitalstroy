@@ -3,13 +3,9 @@
     border-radius: 5px;
     display: grid;
     gap: 12px;
-    
-    @media (max-width: 768px) {
-        margin-top: 20px;
-    }
+    padding: 40px;
 
     @media (min-width: 768px) {
-        padding: 40px;
         width: 360px;
     }
 }

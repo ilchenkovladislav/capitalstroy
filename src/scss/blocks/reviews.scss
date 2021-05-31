@@ -35,6 +35,14 @@
     margin-top: 10px;
 }
 
+.reviews__img {
+    object-fit: cover;
+
+    @media (max-width: 999px) {
+        width: 100%;
+    }
+}
+
 .reviews__btn {
     display: inline-block;
     border: none;
@@ -45,4 +53,13 @@
     &:hover {
         text-decoration: underline;
     }
+}
+
+.reviews__more {
+    display: block;
+    color: $corporate;
+    text-decoration: none;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
