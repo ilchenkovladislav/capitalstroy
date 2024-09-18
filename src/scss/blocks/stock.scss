@@ -1,66 +1,72 @@
 .stock {
-    padding: 40px 0;
-    background-image: url("../img/blocks-banner.png"), url("../img/bg-banner.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 600px, cover;
-    
-    @media (max-width: 767px) {
-        background-position: center 50% ,center center;
-        background-size: 80%, cover;
-        margin-top: 100px;
-    }
-    
-    @media (min-width: 768px) and (max-width: 900px){
-        background-position: 80% 20% ,center center;
-        background-size: 50%, cover;
-    }
-    
-    @media (min-width: 901px) and (max-width: 1199px) {
-        background-position: 80% center, center center;
-        background-size: 50%, cover;    
-    }
+  padding: 40px 0;
+  background-image: url("../img/blocks-banner.png"), url("../img/bg-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px, cover;
+
+  @media (max-width: 767px) {
+    background-position:
+      center 50%,
+      center center;
+    background-size: 80%, cover;
+    margin-top: 100px;
+  }
+
+  @media (min-width: 768px) and (max-width: 900px) {
+    background-position:
+      80% 20%,
+      center center;
+    background-size: 50%, cover;
+  }
+
+  @media (min-width: 901px) and (max-width: 1199px) {
+    background-position:
+      80% center,
+      center center;
+    background-size: 50%, cover;
+  }
 }
 
 .stock__wrapper {
-    @media (min-width: 1200px) {
-        display: grid;
-        grid-template-columns: 1fr min-content;
-    }
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+  }
 }
 
 .stock__title {
-    font-size: 38px;
+  font-size: 38px;
 }
 
 .stock__text {
-    font-size: 22px;
-    margin-top: 25px;
+  font-size: 22px;
+  margin-top: 25px;
 }
 
 .stock__price {
-    font-size: 26px;
-    font-weight: 600;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .stock__inscription {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .stock__timer {
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
     margin-top: 10px;
-    
-    @media (max-width: 768px) {
-        margin-top: 10px;
-    }
+  }
 }
 
 .stock__form {
-    @media (max-width: 767px) {
-        margin-top: 300px;
-    }
+  @media (max-width: 767px) {
+    margin-top: 300px;
+  }
 
-    @media (min-width: 768px) {
-        margin-top: 50px;
-    }
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
 }

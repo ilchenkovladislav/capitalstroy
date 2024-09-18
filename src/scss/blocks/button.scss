@@ -1,21 +1,26 @@
 .button {
-    display: inline-block;
-    border: none;
-    color: $text-white;
-    border-radius: 5px;
-    background: linear-gradient(180deg, #FFDD63 47.4%, #FFC658 83.85%), #FFBA34;
-    box-shadow: 0 2px 0 #EDA51B;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    padding: 1.3em 2em;
+  display: inline-block;
+  border: none;
+  color: $text-white;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #ffdd63 47.4%, #ffc658 83.85%), #ffba34;
+  box-shadow: 0 2px 0 #eda51b;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.3em 2em;
 
-    &:hover {
-        background: linear-gradient(180deg, lighten(#ffdd63, 3%) 47.4%, #ffc658 83.85%), #ffba34;
-    }
-    
-    &:active {
-        box-shadow: none;
-        transform: translateY(2px);    
-    }
+  &:hover {
+    background: linear-gradient(
+        180deg,
+        lighten(#ffdd63, 3%) 47.4%,
+        #ffc658 83.85%
+      ),
+      #ffba34;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
 }

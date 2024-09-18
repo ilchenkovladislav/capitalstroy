@@ -1,65 +1,65 @@
 .reviews {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .reviews__list {
-    margin-top: 53px;
-    list-style: none;
-    display: grid;
-    gap: 50px;
+  margin-top: 53px;
+  list-style: none;
+  display: grid;
+  gap: 50px;
 
-    @media (min-width: 600px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .reviews__item {
-    display: grid;
-    gap: 20px;
-    
-    @media (min-width: 1000px) {
-        grid-template-columns: max-content 1fr;
-    }
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: 1000px) {
+    grid-template-columns: max-content 1fr;
+  }
 }
 
 .reviews__name {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .reviews__email {
-    font-size: 14px;
-    color: $text-light;
+  font-size: 14px;
+  color: $text-light;
 }
 
 .reviews__text {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .reviews__img {
-    object-fit: cover;
+  object-fit: cover;
 
-    @media (max-width: 999px) {
-        width: 100%;
-    }
+  @media (max-width: 999px) {
+    width: 100%;
+  }
 }
 
 .reviews__btn {
-    display: inline-block;
-    border: none;
-    background-color: transparent;
-    color: $text-light;
-    margin-top: 10px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: $text-light;
+  margin-top: 10px;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .reviews__more {
-    display: block;
-    color: $corporate;
-    text-decoration: none;
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 50px;
+  display: block;
+  color: $corporate;
+  text-decoration: none;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
 }

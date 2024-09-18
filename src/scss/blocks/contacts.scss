@@ -1,58 +1,57 @@
 .contacts {
-
 }
 
 .contacts__outer-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .contacts__inner-wrapper {
-    @media (min-width: 700px) {
-        background-color: #fff;
-        position: absolute;
-        top: 60px;
-        left: 60px;
-        padding: 37px;
-    }
+  @media (min-width: 700px) {
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    padding: 37px;
+  }
 }
 
 .contacts__map {
-    height: 500px;
-    width: 100%;
-    background-image: url("../img/map.jpg");
-    background-size: cover;
-    background-position: center 20%;
-    background-repeat: no-repeat;
-    
-    @media (max-width: 699px) {
-        background-position: -250px;
-        height: 350px;
-    }
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/map@2x.jpg");
-    }
+  @media (max-width: 699px) {
+    background-position: -250px;
+    height: 350px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map@2x.jpg");
+  }
 }
 
 .contacts__tel {
-    text-decoration: none;
-    display: block;
-    color: $text-black;
-    font-size: 24px;
+  text-decoration: none;
+  display: block;
+  color: $text-black;
+  font-size: 24px;
 
-    &:hover {
-        text-decoration: underline;
-        text-underline-offset: 5px;
-    }
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
 }
 
 .contacts__callback {
-    background-color: transparent;
-    border: none;
-    color: $corporate;
-    margin-top: 30px;
+  background-color: transparent;
+  border: none;
+  color: $corporate;
+  margin-top: 30px;
 }
 
 .contacts__info {
-    margin-top: 30px;
+  margin-top: 30px;
 }

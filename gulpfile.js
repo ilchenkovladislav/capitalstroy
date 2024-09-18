@@ -36,7 +36,7 @@ const copy = () => {
       ],
       {
         base: "src",
-      }
+      },
     )
     .pipe(gulp.dest("build"));
 };

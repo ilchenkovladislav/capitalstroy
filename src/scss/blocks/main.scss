@@ -1,95 +1,95 @@
 .main {
-    background-color: #fff;
+  background-color: #fff;
 
-    @media (min-width: 768px) {
-        background-image: url("../img/main-bg-tablet.jpg");
-        background-size: cover;
-        background-position: 15% -50px;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
+  @media (min-width: 768px) {
+    background-image: url("../img/main-bg-tablet.jpg");
+    background-size: cover;
+    background-position: 15% -50px;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
 
-    @media (min-width: 1400px) {
-        background-image: url("../img/main-bg.jpg");
-    }
+  @media (min-width: 1400px) {
+    background-image: url("../img/main-bg.jpg");
+  }
 }
 
 .main__title {
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 1.2em;
-    margin-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-top: 50px;
 
-    @media (max-width: 450px) {
-        font-size: 32px;
-    }
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
 
-    @media (min-width: 768px) and (max-width: 810px) {
-        font-size: 46px;
-    }
+  @media (min-width: 768px) and (max-width: 810px) {
+    font-size: 46px;
+  }
 }
 
 .main__text {
-    font-size: 22px;
-    margin-top: 30px;
+  font-size: 22px;
+  margin-top: 30px;
 }
 
 .main__img {
-    @media (min-width: 768px) {
-        display: none;
-    }
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .main__list {
-    list-style: none;
-    display: grid;
-    gap: 40px;
-    margin-top: 55px;
-    max-width: 550px;
+  list-style: none;
+  display: grid;
+  gap: 40px;
+  margin-top: 55px;
+  max-width: 550px;
 }
 
 .main__item {
-    position: relative;
-    padding-left: 80px;
+  position: relative;
+  padding-left: 80px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--storage {
     &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        left: 0;
-        width: 60px;
-        height: 50px;
-        background-size: contain;
-        background-repeat: no-repeat;
+      background-image: url("../img/advantages4.jpg");
     }
+  }
 
-    &--storage {
-        &::before {
-            background-image: url("../img/advantages4.jpg");   
-        }
+  &--price {
+    &::before {
+      background-image: url("../img/advantages2.jpg");
     }
-    
-    &--price {
-        &::before {
-            background-image: url("../img/advantages2.jpg");   
-        }
+  }
+
+  &--transport {
+    &::before {
+      background-image: url("../img/advantages8.png");
+      width: 70px;
+      height: 60px;
     }
-    
-    &--transport {
-        &::before {
-            background-image: url("../img/advantages8.png");
-            width: 70px;
-            height: 60px;
-        }
-    }
+  }
 }
 
 .main__btn {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    @media (max-width: 450px) {
-        width: 100%;
-        padding: 1.3em 0;
-        font-size: 15px;
-    }
+  @media (max-width: 450px) {
+    width: 100%;
+    padding: 1.3em 0;
+    font-size: 15px;
+  }
 }
