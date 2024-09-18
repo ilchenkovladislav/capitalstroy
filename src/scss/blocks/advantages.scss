@@ -1,6 +1,7 @@
 .advantages {
     padding-top: 50px;
-    background-color: brown;
+    padding-bottom: 100px;
+    background-color: $corporate;
 
     @media (max-width: 768px) {
         background-color: #fff;
@@ -29,7 +30,7 @@
         padding: 50px;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     @media(min-width: 1200px) {
         padding: 70px;
         grid-template-columns: repeat(3, 1fr);
