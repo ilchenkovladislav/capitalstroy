@@ -1,38 +1,26 @@
 function newYearIn() {
-    var now = new Date();
-    var newYear = new Date(2021, 5, 25);
-    var totalRemains = (newYear.getTime()-now.getTime());
-    
-    if (totalRemains>1)
-    {
-        var RemainsSec=(parseInt(totalRemains/1000));
-        var RemainsFullDays=(parseInt(RemainsSec/(24*60*60)));
+    const now = new Date();
+    const newYear = new Date(2025, 0, 1);
+    const totalRemains = newYear.getTime() - now.getTime();
 
-        var secInLastDay=RemainsSec-RemainsFullDays*24*3600;
-        var RemainsFullHours=(parseInt(secInLastDay/3600));
+        const RemainsSec = Math.floor(totalRemains / 1000);
+        const RemainsFullDays = Math.floor(RemainsSec / (24 * 60 * 60));
 
-        if (RemainsFullHours<10) {
-            RemainsFullHours="0"+RemainsFullHours
-        };
-        
-        var secInLastHour=secInLastDay-RemainsFullHours*3600;
-        var RemainsMinutes=(parseInt(secInLastHour/60));
+        const secInLastDay = RemainsSec - RemainsFullDays * 24 * 3600;
+        let RemainsFullHours = Math.floor(secInLastDay / 3600);
 
-        if (RemainsMinutes<10) {
-            RemainsMinutes = "0" + RemainsMinutes
-        };
+        RemainsFullHours = RemainsFullHours < 10 ? "0" + RemainsFullHours : RemainsFullHours;
 
-        var lastSec=secInLastHour-RemainsMinutes*60;
+        const secInLastHour = secInLastDay - RemainsFullHours * 3600;
+        let RemainsMinutes = Math.floor(secInLastHour / 60);
 
-        if (lastSec<10) {
-            lastSec = "0" + lastSec
-        };
+        RemainsMinutes = RemainsMinutes < 10 ? "0" + RemainsMinutes : RemainsMinutes;
 
         document.querySelector(".timer__day").innerHTML = RemainsFullDays;
         document.querySelector(".timer__hour").innerHTML = RemainsFullHours;
         document.querySelector(".timer__minute").innerHTML = RemainsMinutes;
 
-        setTimeout("newYearIn()", 10000);
-    }
+        setTimeout(newYearIn, 60000); // Обновляем таймер каждую минуту
 }
+
 newYearIn();
